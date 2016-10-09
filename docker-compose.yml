@@ -12,6 +12,7 @@ services:
         working_dir: /var/www/html
         volumes:
          - ./wordpress:/var/www/html
+         - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     wordpress_db:
         image: mysql:5.7
         environment:
